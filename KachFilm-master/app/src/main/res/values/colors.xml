@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#231268</color>
+    <color name="colorPrimaryDark">#00003d</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="colorActor">#375d81</color>
+    <color name="colorwrite">#ffffffff</color>
+    <color name="backgroundApp">#f2f2f2</color>
+    <color name="aucunBackground">#00ffffff</color>
+</resources>

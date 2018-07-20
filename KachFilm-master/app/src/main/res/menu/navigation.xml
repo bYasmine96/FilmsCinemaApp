@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottom_nav_accueil"
+        android:title="@string/nav_acceuil_texte"
+        android:icon="@mipmap/ic_home_black_48dp" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottom_nav_cinema"
+        android:title="@string/nav_cinema_texte"
+        android:icon="@mipmap/ic_cinema_black_48dp" />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottom_nav_series"
+        android:title="@string/nav_series_texte"
+        android:icon="@mipmap/tv_black"/>
+
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottom_nav_stars"
+        android:title="@string/nav_personne_texte"
+        android:icon="@mipmap/ic_stars_black_48dp" />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottom_nav_fan"
+        android:title="@string/nav_fan_texte"
+        android:icon="@mipmap/ic_favorite_border_black_48dp" />
+
+
+</menu>

@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">KachFilm</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Titre des activity-->
+
+    <string name="Titre_home_activity">Accueil</string>
+    <string name="Titre_cinema_activity">Cinema</string>
+    <string name="Titre_series_activity">Series</string>
+    <string name="Titre_fan_activity">Fans</string>
+    <string name="Titre_stars_activity">Stars</string>
+
+
+    <!--  Texte du Bottom Navigation -->
+    <string name="nav_acceuil_texte">Accueil</string>
+    <string name="nav_cinema_texte">Cinéma</string>
+    <string name="nav_series_texte">Séries</string>
+    <string name="nav_personne_texte">Stars</string>
+    <string name="nav_fan_texte">Fan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--  String de l'interface liste de séries  -->
+
+    <string name="annee_production">Production : </string>
+    <string name="nombre_saison">Nombre de saison: </string>
+
+    <!-- donnés films-->
+    <string name="titre_film1"> Frank </string>
+    <string name="titre_film2"> Black panther</string>
+    <string name="titre_film3"> Harry Potter I : Harry Potter à l école des sorciers</string>
+    <string name="titre_film4"> Harry Poter 7</string>
+    <string name="titre_film5"> Host </string>
+    <string name="titre_film6"> Lord of the ring</string>
+    <string name="titre_film7"> Oblivior</string>
+    <string name="titre_film8"> Titanic</string>
+
+    <!-- Date de sortie -->
+    <string name="date1">  2016</string>
+    <string name="date2"> 2018 </string>
+    <string name="date3"> 2015 </string>
+    <string name="date4"> 2011</string>
+    <string name="date5"> 2012</string>
+
+
+    <!-- donnés series-->
+
+    <string name="titre_serie1"> DETREX </string>
+    <string name="titre_serie2"> FRI </string>
+    <string name="titre_serie3"> Pretty Little lyers </string>
+    <string name="titre_serie4"> La casa S1 </string>
+    <string name="titre_serie5"> La casa S2</string>
+    <string name="titre_serie6"> The last kingdom </string>
+
+    <!-- Liste des acteurs réalisateurs-->
+
+    <string name="nom_acteur_realisateur1"> Emma Watson Actrice</string>
+    <string name="nom_acteur_realisateur2"> Brad Pitt Acteur </string>
+    <string name="nom_acteur_realisateur3"> Leonardo Dicaprio Acteur</string>
+    <string name="nom_acteur_realisateur4"> Johnny Depp Acteur et réalisateur</string>
+    <string name="nom_acteur_realisateur5"> Angelina Jolie Actrice</string>
+    <string name="nom_acteur_realisateur6"> Julia Roberts Actrice</string>
+    <string name="nom_acteur_realisateur7"> Emma Roberts Actrice</string>
+    <string name="nom_acteur_realisateur8"> James Toback Réalisateur</string>
+    <string name="nom_acteur_realisateur9"> Woody Alien Réalisateur</string>
+
+
+    <!-- Types acteur/trice ou réalisateur/trice -->
+
+    <string name="acteur"> Acteur </string>
+    <string name="realisateur"> Réalisateur </string>
+    <string name="actrice"> Actrice </string>
+    <string name="realisatrice"> Réalisatrice</string>
+
+
+    <!-- Actrice Emma Charlotte -->
+    <string name="nom"> Emma Watson</string>
+    <string name="naissance">15 avril 1990 à Paris</string>
+    <string name="bibliographie">Bibliographie</string>
+    <string name="descriptionbiblio"> Emma Watson, nee le 15 avril 1990 à Paris, en France, est une actrice britannique. Elle est devenue celebre en jouant le rôle dHermione Granger, lun des trois rôles principaux dans la série des films Harry Potter. Elle est nommée pour de nombreuses récompenses pour son rôle, et en remporte plusieurs.
+    Ce n est qu après avoir tourné tous les opus de Harry Potter que l actrice s attaque à des rôles très différents. En 2012, elle incarne une des costumières de Marilyn Monroe dans le film My Week with Marilyn de Simon Curtis. On la retrouve également à l affiche du Monde de Charlie de Stephen Chbosky et de The Bling Ring, réalisé par Sofia Coppola, sorti en 2013, où elle tient lun des rôles principaux. En 2014, elle tient le rôle d Ila dans le péplum américain Noé réalisé par Darren Aronofsky. On peut aussi la retrouver dans le film Regression de Alejandro Amenabar en 2015, et dans des films engagés comme Colonia </string>
+    <string name="filmographie"> Filmographie</string>
+    <string name="commentaire"> Commentraires</string>
+    <string name="liretout"> Lire tout</string>
+
+    <!-- Partie commentaire des personnes dans l'application-->
+    <string name="titlepersonne1"> Cadeau d anniversaire</string>
+    <string name="nompersonne1"> Sandra Adams</string>
+    <string name="commentairpersonne1"> -la premiere semaine de l annnee dont lequel vous aurez la chance de prendre un cadeau. la premiere semaine de l annnee dont lequel vous aurez la chance de prendre un cadeau</string>
+
+    <string name="titlepersonne2"> Moment de la piscine et la gym</string>
+    <string name="nompersonne2"> Ray Neal</string>
+    <string name="commentairpersonne3"> -Sante, robust, distraction surtout pour les poumons</string>
+
+    <!--TabLayout-->
+    <string name="salledecinema"> Salle de cinéma</string>
+    <string name="films"> Films</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_cinema_activity">Navigation_cinema_activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_navig_cinema">Navig_cinema</string>
+    <string name="title_activity_esaai">esaai</string>
+    <string name="title_activity_yas">yas</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_tab_cinema_activity">Tab_cinema_activity</string>
+
+
+    <!--  Interface film en projection-->
+
+    <string name="detail_film_button">Aller aux détails du film</string>
+    <string name="detail_serie_button">Aller aux détails de le série</string>
+    <string name="description1">Harry Potter à lécole des sorciers est un film fantastique britannico-américain réalisé par Chris Columbus, sorti en 2001. Il est adapté du roman du même nom de J. K. Rowling et constitue le premier volet de la série de films Harry Potter.</string>
+
+    <!--  Info sur les salles-->
+    <string name="nom_salle1">Ibn Khaldoun</string>
+    <string name="nom_salle2">Cosmos</string>
+    <string name="nom_salle3">Alger</string>
+
+
+    <!--Adresse-->
+
+    <string name="adresse_salle1">Cinéma à alger centre</string>
+    <string name="adresse_salle2">Cinema Didouche Mourad</string>
+    <string name="adresse_salle3">El biar, Alger</string>
+
+    <string name="Ajouter"> Ajouter</string>
+
+
+</resources>

@@ -1,0 +1,67 @@
+Index: app/src/main/java/com/tdm1/esi/kachfilm/DataClass/DataFromAPI.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.tdm1.esi.kachfilm.DataClass\n\nimport com.google.gson.annotations.SerializedName\nimport java.io.Serializable\nimport java.util.*\n\n/**\n * Created by mac on 17/06/2018.\n */\n\ndata class SpokenLanguage (\n\n        @SerializedName(\"iso_639_1\") val iso_639_1: String,\n        @SerializedName(\"name\") val name: String\n)\n\ndata class ProductionCountrie(\n        @SerializedName(\"iso_3166_1\") val iso_3166_1: String,\n        @SerializedName(\"name\") val name: String\n\n)\n\ndata class ProductionCompanie(\n\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"logo_path\") val logo_path: String,\n        @SerializedName(\"name\") val name: String,\n        @SerializedName(\"origin_country\") val origin_country: String\n)\n\ndata class genre(\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"name\") val name: String\n)\n\ndata class Movie(\n        @SerializedName(\"adult\") val adult: Boolean,\n        @SerializedName(\"backdrop_path\") val backdrop_path: String,\n        @SerializedName(\"belongs_to_collection\") val belongs_to_collection: String,\n        @SerializedName(\"budget\") val budget: Double,\n        @SerializedName(\"genres\") val genres:Array<genre>,\n        @SerializedName(\"homepage\") val homepage: String,\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"imdb_id\") val imdb_id: String,\n        @SerializedName(\"original_language\") val original_language: String,\n        @SerializedName(\"original_title\") val original_title: String,\n        @SerializedName(\"overview\") val overview: String,\n        @SerializedName(\"popularity\") val popularity: Double,\n        @SerializedName(\"poster_path\") val poster_path: String,\n        @SerializedName(\"production_companies\") val production_companies:Array<ProductionCompanie>,\n        @SerializedName(\"production_countries\") val production_countries:Array<ProductionCountrie>,\n        @SerializedName(\"release_date\") val release_date: String,\n        @SerializedName(\"revenue\") val revenue: Double,\n        @SerializedName(\"runtime\") val runtime: String,\n        @SerializedName(\"spoken_languages\") val spoken_languages:Array<SpokenLanguage>,\n        @SerializedName(\"status\") val status: String,\n        @SerializedName(\"tagline\") val tagline: String,\n        @SerializedName(\"title\") val title: String,\n        @SerializedName(\"video\") val video: Boolean,\n        @SerializedName(\"vote_average\") val vote_average: Double,\n        @SerializedName(\"vote_count\") val vote_count: Int\n\n        )\n\ndata class IntervalleDate (\n        @SerializedName(\"maximum\") val maximum: String,\n        @SerializedName(\"minimum\") val minimum: String\n)\ndata class ResponseMovieNow(\n\n        @SerializedName(\"results\") val results:Array<MovieNow>,\n        @SerializedName(\"page\") val page: Int,\n        @SerializedName(\"total_results\") val total_results: Int,\n //       @SerializedName(\"dates\") val dares:Array<IntervalleDate>,\n        @SerializedName(\"total_pages\") val total_pages: Int\n)\n\ndata class ResponseMovieSimilaire(\n        @SerializedName(\"page\") val page: Int,\n        @SerializedName(\"results\") val results:Array<MovieNow>,\n        @SerializedName(\"total_pages\") val total_pages: Int,\n        @SerializedName(\"total_results\") val total_results: Int\n\n\n)\n\n\ndata class MovieNow(\n        @SerializedName(\"vote_count\") val vote_count: Int,\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"video\") val video: Boolean,\n        @SerializedName(\"vote_average\") val vote_average: Double,\n        @SerializedName(\"title\") val title: String,\n        @SerializedName(\"popularity\") val popularity: Double,\n        @SerializedName(\"poster_path\") val poster_path: String,\n        @SerializedName(\"original_language\") val original_language: String,\n        @SerializedName(\"original_title\") val original_title: String,\n        @SerializedName(\"genre_ids\") val genre_ids:Array<Int>,\n        @SerializedName(\"backdrop_path\") val backdrop_path: String,\n        @SerializedName(\"adult\") val adult: Boolean,\n        @SerializedName(\"overview\") val overview: String,\n        @SerializedName(\"release_date\") val release_date: String\n)\n\n\ndata class ResponseCritique(\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"page\") val page: Int,\n        @SerializedName(\"results\") val results:Array<Critique>,\n        @SerializedName(\"total_pages\") val total_pages: Int,\n        @SerializedName(\"total_results\") val total_results: Int\n\n)\n\ndata class Critique(\n        @SerializedName(\"id\") val id: String,\n        @SerializedName(\"author\") val author: String,\n        @SerializedName(\"content\") val content: String,\n        @SerializedName(\"url\") val url: String\n)\n\n\ndata class ResponseStars(\n\n        @SerializedName(\"page\") val page: Int,\n        @SerializedName(\"results\") val results:Array<Personne>,\n        @SerializedName(\"total_pages\") val total_pages: Int,\n        @SerializedName(\"total_results\") val total_results: Int\n\n)\n\ndata class Personne(\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"known_for\") val known_for:Array<MovieNow>,\n        @SerializedName(\"popularity\") val popularity: Double,\n        @SerializedName(\"name\") val name: String\n)\n\ndata class profiles(\n        @SerializedName(\"file_path\") val file_path: String\n)\n\ndata class ResponseImageStar(\n\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"profiles\") val profiles:Array<profiles>\n)\n\ndata class ResponseInfoStar(\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"biography\") val biography: String,\n        @SerializedName(\"birthday\") val birthday:String,\n        @SerializedName(\"popularity\") val popularity: Double,\n        @SerializedName(\"name\") val name: String,\n        @SerializedName(\"place_of_birth\") val place_of_birth: String\n)\n\n\ndata class ReponseSeries(\n\n        @SerializedName(\"page\") val page: Int,\n        @SerializedName(\"results\") val results:Array<SerieNow>,\n        @SerializedName(\"total_pages\") val total_pages: Int,\n        @SerializedName(\"total_results\") val total_results: Int\n\n)\n\n\ndata class SerieNow(\n        @SerializedName(\"vote_count\") val vote_count: Int,\n        @SerializedName(\"id\") val id: Int,\n        @SerializedName(\"video\") val video: Boolean,\n        @SerializedName(\"vote_average\") val vote_average: Double,\n        @SerializedName(\"name\") val title: String,\n        @SerializedName(\"popularity\") val popularity: Double,\n        @SerializedName(\"poster_path\") val poster_path: String,\n        @SerializedName(\"original_language\") val original_language: String,\n        @SerializedName(\"original_name\") val original_name: String,\n        @SerializedName(\"genre_ids\") val genre_ids:Array<Int>,\n        @SerializedName(\"backdrop_path\") val backdrop_path: String,\n        @SerializedName(\"adult\") val adult: Boolean,\n        @SerializedName(\"overview\") val overview: String,\n        @SerializedName(\"first_air_date\") val first_air_date: String\n)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tdm1/esi/kachfilm/DataClass/DataFromAPI.kt	(date 1529616194000)
++++ app/src/main/java/com/tdm1/esi/kachfilm/DataClass/DataFromAPI.kt	(revision )
+@@ -156,22 +156,13 @@
+ )
+ 
+ 
+-data class ReponseSeries(
+-
+-        @SerializedName("page") val page: Int,
+-        @SerializedName("results") val results:Array<SerieNow>,
+-        @SerializedName("total_pages") val total_pages: Int,
+-        @SerializedName("total_results") val total_results: Int
+-
+-)
+-
+ 
+ data class SerieNow(
+         @SerializedName("vote_count") val vote_count: Int,
+         @SerializedName("id") val id: Int,
+         @SerializedName("video") val video: Boolean,
+         @SerializedName("vote_average") val vote_average: Double,
+-        @SerializedName("name") val title: String,
++        @SerializedName("name") val name: String,
+         @SerializedName("popularity") val popularity: Double,
+         @SerializedName("poster_path") val poster_path: String,
+         @SerializedName("original_language") val original_language: String,
+@@ -182,3 +173,32 @@
+         @SerializedName("overview") val overview: String,
+         @SerializedName("first_air_date") val first_air_date: String
+ )
++
++data class ReponseSeries(
++
++        @SerializedName("page") val page: Int,
++        @SerializedName("results") val results:Array<SerieNow>,
++        @SerializedName("total_pages") val total_pages: Int,
++        @SerializedName("total_results") val total_results: Int
++
++)
++
++
++data class ResponseSerieSimilaire(
++        @SerializedName("page") val page: Int,
++        @SerializedName("results") val results:Array<SerieNow>,
++        @SerializedName("total_pages") val total_pages: Int,
++        @SerializedName("total_results") val total_results: Int
++
++)
++
++data class InfoSaison(
++        @SerializedName("air_date") val air_date: String,
++        @SerializedName("episode_count") val episode_count: Int,
++        @SerializedName("id") val id: Int,
++        @SerializedName("poster_path") val poster_path: String,
++        @SerializedName("season_number") val season_number: Int
++)
++data class ResponseSerieDetail(
++        @SerializedName("seasons") val seasons:Array<InfoSaison>
++)
+\ No newline at end of file
